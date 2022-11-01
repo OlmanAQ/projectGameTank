@@ -1,9 +1,10 @@
+package TankAttack;
 
 
 import javax.swing.*;
 
-public class Enemigo {
-    Enemigo(int inisialX, int inisialY){
+public class Enemigos {
+    Enemigos(int inisialX, int inisialY){
         this.koorX = inisialX;
         this.koorY = inisialY;
     }
@@ -17,31 +18,31 @@ public class Enemigo {
     private boolean kanan = true;
     protected boolean idup = true;
 
-    protected ImageIcon gambarMusuh = new ImageIcon("src/com/resources/tankRight3.png");
+    protected ImageIcon gambarMusuh = new ImageIcon("src/tankRight3.png");
 
     protected void turnLeft(){
         if (atas){
             atas = false;
             kiri = true;
-            gambarMusuh = new ImageIcon("src/com/resources/tankLeft3.png");
+            gambarMusuh = new ImageIcon("src/tankLeft3.png");
         }
 
         if (kiri){
             kiri = false;
             bawah = true;
-            gambarMusuh = new ImageIcon("src/com/resources/tankDown3.png");
+            gambarMusuh = new ImageIcon("src/tankDown3.png");
         }
 
         if (bawah){
             bawah = false;
             kanan = true;
-            gambarMusuh = new ImageIcon("src/com/resources/tankKanan3.png");
+            gambarMusuh = new ImageIcon("src/tankKanan3.png");
         }
 
         if (kanan){
             kanan = false;
             atas = true;
-            gambarMusuh = new ImageIcon("src/com/resources/tankUp3.png");
+            gambarMusuh = new ImageIcon("src/tankUp3.png");
         }
     }
 
@@ -49,25 +50,25 @@ public class Enemigo {
         if (atas){
             atas = false;
             kanan = true;
-            gambarMusuh = new ImageIcon("src/com/resources/tankRight3.png");
+            gambarMusuh = new ImageIcon("src/tankRight3.png");
         }
 
         if (kanan){
             kanan = false;
             bawah = true;
-            gambarMusuh = new ImageIcon("src/com/resources/tankDown3.png");
+            gambarMusuh = new ImageIcon("src/tankDown3.png");
         }
 
         if (bawah){
             bawah = false;
             kiri = true;
-            gambarMusuh = new ImageIcon("src/com/resources/tankLeft3.png");
+            gambarMusuh = new ImageIcon("src/tankLeft3.png");
         }
 
         if (kiri){
             kiri = false;
             atas = true;
-            gambarMusuh = new ImageIcon("src/com/resources/tankUp3.png");
+            gambarMusuh = new ImageIcon("src/tankUp3.png");
         }
     }
 

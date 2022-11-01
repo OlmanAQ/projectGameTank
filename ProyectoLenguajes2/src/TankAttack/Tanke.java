@@ -1,11 +1,13 @@
+package TankAttack;
+
 
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
-public class tanke extends JFrame {
+public class Tanke extends JFrame {
 
-    public tanke() {
-        add(new mapa());
+    public Tanke() {
+        add(new Mapa());
 
         setResizable(false);
         pack();
@@ -18,7 +20,7 @@ public class tanke extends JFrame {
     public static void main(String[] args) {
 
         EventQueue.invokeLater(() -> {
-            JFrame tank = new tanke();
+            JFrame tank = new Tanke();
             tank.setVisible(true);
         });
     }

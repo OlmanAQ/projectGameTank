@@ -1,4 +1,4 @@
-
+package TankAttack;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -6,7 +6,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
 
-public class bala extends JFrame implements ActionListener {
+public class Main extends JFrame implements ActionListener {
     private final int PANJANG = 300;
     private final int LEBAR = 300;
     private final int UKURAN = 15;
@@ -23,7 +23,7 @@ public class bala extends JFrame implements ActionListener {
     private int projectile_x;
     private int projectile_y;
 
-    public bala(){
+    public Main(){
 
     }
 

@@ -1,3 +1,5 @@
+package TankAttack;
+
 
 
 import java.awt.Color;
@@ -14,7 +16,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class mapa extends JPanel implements ActionListener {
+public class Mapa extends JPanel implements ActionListener {
 
     private final int PANJANG = 300;
     private final int LEBAR = 300;
@@ -27,7 +29,7 @@ public class mapa extends JPanel implements ActionListener {
     private int target_x;
     private int target_y;
 
-    private Enemigo[] musuh = new Enemigo[10];
+    private Enemigos[] musuh = new Enemigos[10];
 
     private boolean kiri = false;
     private boolean kanan = true;
@@ -37,7 +39,7 @@ public class mapa extends JPanel implements ActionListener {
 
     private Timer timer1;
 
-    public mapa() {
+    public Mapa() {
         addKeyListener(new TAdapter());
         setBackground(Color.darkGray);
         setFocusable(true);
@@ -51,9 +53,9 @@ public class mapa extends JPanel implements ActionListener {
     private ImageIcon target;
 
     private void loadGambar() {
-        gambarPlayer = new ImageIcon("src/com/resources/tankRight.png");
-        peluru = new ImageIcon("src/com/resources/bulletRight.png");
-        target = new ImageIcon("src/com/resources/naziLogo.png");
+        gambarPlayer = new ImageIcon("src/tankRight.png");
+        peluru = new ImageIcon("src/bulletRight.png");
+        target = new ImageIcon("src/naziLogo.png");
     }
 
     private void inisialisasiPermainan() {
@@ -62,7 +64,7 @@ public class mapa extends JPanel implements ActionListener {
         projectile_x = -5*UKURAN;
         projectile_y = -5*UKURAN;
         aturUlangTarget();
-        musuh[0] = new Enemigo(UKURAN, 3*UKURAN);
+        musuh[0] = new Enemigos(UKURAN, 3*UKURAN);
         relocateMusuh();
         timer1 = new Timer(delay, this);
         timer1.start();
@@ -161,7 +163,7 @@ public class mapa extends JPanel implements ActionListener {
             projectile_y = player_y;
             trigerring = false;
             if (kiri){
-                peluru = new ImageIcon("src/com/resources/bulletLeft.png");
+                peluru = new ImageIcon("src/bulletLeft.png");
                 peluruKiri = true;
                 peluruAtas = false;
                 peluruKanan = false;
@@ -169,7 +171,7 @@ public class mapa extends JPanel implements ActionListener {
             }
 
             if (kanan){
-                peluru = new ImageIcon("src/com/resources/bulletRight.png");
+                peluru = new ImageIcon("src/bulletRight.png");
                 peluruKiri = false;
                 peluruAtas = false;
                 peluruKanan = true;
@@ -177,7 +179,7 @@ public class mapa extends JPanel implements ActionListener {
             }
 
             if (atas){
-                peluru = new ImageIcon("src/com/resources/bulletUp.png");
+                peluru = new ImageIcon("src/bulletUp.png");
                 peluruKiri = false;
                 peluruAtas = true;
                 peluruKanan = false;
@@ -185,7 +187,7 @@ public class mapa extends JPanel implements ActionListener {
             }
 
             if (bawah){
-                peluru = new ImageIcon("src/com/resources/bulletDown.png");
+                peluru = new ImageIcon("src/bulletDown.png");
                 peluruKiri = false;
                 peluruAtas = false;
                 peluruKanan = false;
@@ -301,22 +303,22 @@ public class mapa extends JPanel implements ActionListener {
 
             if (player_x >= musuh[0].koorX && jarakX >= jarakY){
                 musuh[0].koorX += UKURAN;
-                musuh[0].gambarMusuh = new ImageIcon("src/com/resources/tankRight3.png");
+                musuh[0].gambarMusuh = new ImageIcon("src/tankRight3.png");
             }
 
             if (player_x < musuh[0].koorX && jarakX >= jarakY){
                 musuh[0].koorX -= UKURAN;
-                musuh[0].gambarMusuh = new ImageIcon("src/com/resources/tankLeft3.png");
+                musuh[0].gambarMusuh = new ImageIcon("src/tankLeft3.png");
             }
 
             if (player_y >= musuh[0].koorY && jarakY > jarakX){
                 musuh[0].koorY += UKURAN;
-                musuh[0].gambarMusuh = new ImageIcon("src/com/resources/tankDown3.png");
+                musuh[0].gambarMusuh = new ImageIcon("src/tankDown3.png");
             }
 
             if (player_y < musuh[0].koorY && jarakY > jarakX){
                 musuh[0].koorY -= UKURAN;
-                musuh[0].gambarMusuh = new ImageIcon("src/com/resources/tankUp3.png");
+                musuh[0].gambarMusuh = new ImageIcon("src/tankUp3.png");
             }
         }else{
         }
@@ -367,7 +369,7 @@ public class mapa extends JPanel implements ActionListener {
                     kiri = true;
                     atas = false;
                     bawah = false;
-                    gambarPlayer = new ImageIcon("src/com/resources/tankLeft.png");
+                    gambarPlayer = new ImageIcon("src/tankLeft.png");
                 }
             }
 
@@ -378,7 +380,7 @@ public class mapa extends JPanel implements ActionListener {
                     kanan = true;
                     atas = false;
                     bawah = false;
-                    gambarPlayer = new ImageIcon("src/com/resources/tankRight.png");
+                    gambarPlayer = new ImageIcon("src/tankRight.png");
                 }
             }
 
@@ -389,7 +391,7 @@ public class mapa extends JPanel implements ActionListener {
                     atas = true;
                     kanan = false;
                     kiri = false;
-                    gambarPlayer = new ImageIcon("src/com/resources/tankUp.png");
+                    gambarPlayer = new ImageIcon("src/tankUp.png");
                 }
             }
 
@@ -400,7 +402,7 @@ public class mapa extends JPanel implements ActionListener {
                     bawah = true;
                     kanan = false;
                     kiri = false;
-                    gambarPlayer = new ImageIcon("src/com/resources/tankDown.png");
+                    gambarPlayer = new ImageIcon("src/tankDown.png");
                 }
             }
         }
