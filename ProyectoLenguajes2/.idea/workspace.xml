@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7502f2b8-3418-45d1-8146-773b21d255b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/TankAttack/Enemigos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TankAttack/Enemigos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TankAttack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TankAttack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TankAttack/Mapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TankAttack/Mapa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TankAttack/Tanke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TankAttack/Tanke.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/TankAttack/Enemigos.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/TankAttack/Mapa.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/TankAttack/Tanke.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GeO6qQ3cUNldTMLj2xWUPxErTY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Usuario/OneDrive - Estudiantes ITCR/Documentos/BlueBoyTreasure v1.0&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Usuario\Documents\GitHub\projectGameTank\ProyectoLenguajes2\out" />
+      <recent name="D:\lenguajes\Proyecto2\ProyectoLenguajes2\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TankClient">
+    <configuration name="TankClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TankAttack.TankClient" />
+      <module name="ProyectoLenguajes2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TankAttack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tanke" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TankAttack.Tanke" />
+      <module name="ProyectoLenguajes2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TankAttack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TankClient" />
+        <item itemvalue="Application.Tanke" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7502f2b8-3418-45d1-8146-773b21d255b9" name="Changes" comment="" />
+      <created>1666745423895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666745423895</updated>
+      <workItem from="1666745423897" duration="2272000" />
+      <workItem from="1666793449497" duration="608000" />
+      <workItem from="1666794124102" duration="592000" />
+      <workItem from="1666815221298" duration="144000" />
+      <workItem from="1667331250158" duration="240000" />
+      <workItem from="1667405039575" duration="7033000" />
+      <workItem from="1667543402182" duration="16500000" />
+      <workItem from="1668209820898" duration="24362000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
