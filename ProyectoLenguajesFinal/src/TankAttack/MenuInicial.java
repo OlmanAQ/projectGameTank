@@ -22,7 +22,7 @@ public class MenuInicial {
         //hacer que la ventana no se pueda redimensionar
         ventana.setResizable(false);
         //hacer que la ventana tenga un tamaño de 500x500
-        ventana.setSize(900,700);
+        ventana.setSize(900,600);
         //hacer que la ventana se abra en el centro de la pantalla
         ventana.setLocationRelativeTo(null);
         ventana.setLayout(null);
