@@ -1,0 +1,21 @@
+
+Bienvenido a Tank Attack
+
+Como se juega:
+
+El jugador puede moverse en las cuatro direccion basicas una a a la vez, con las teclas (w) hacia arriba, (s) hacia abajo, (d) hacia la derecha y (a)
+hacia la izquierda tambien con las flechas hacia arriba abajo, derecha e izquierda si se poseen.
+(el tanke al ser un objeto lento solo puede rotar a la derecha o a la izquierda, si se esta viendo hacia el arriba y desea avanzar hacia abajo, debe girar
+primero hacia la derecha o izquierda y luego hacia abajo, o viceversa) y asi para cada direccion opuesta.
+
+El jugador puede disparar con la tecla (espacio)
+
+El jugador puede pausar el juego con la tecla (p) y despausarlo con la tecla (p) nuevamente.
+
+Para agregar complejidad al juego y hacerlo más interesante, el jugador solo puede disparar una siguiente bala unicamente
+cuando su anterior bala haya impactado en un tanke enemigo o en un obstaculo, de lo contrario no podra disparar otra bala.
+
+Para adaptar al usuario en el niverl 1 los tankes no atacar, solo trataran de desrtuir el tanke del jugador chocandolo.
+en los posteriores niveles si dispararan.
+
+Para ganar el primer nivel basta con destruir el 1 solo objetivo, para los otros niveles se debe destruir el 2do objetivo.
