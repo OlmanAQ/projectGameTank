@@ -14,7 +14,7 @@ public class TankeEnemigo2 {
     protected int CordenadaX;
     protected int CordenadaY;
     private final int Largo = 900;
-    private final int Ancho = 600;
+    private final int Ancho = 700;
     private final int Talla = 30;
 
     private boolean arriba = false;
