@@ -473,19 +473,31 @@ public class Juego extends JPanel implements ActionListener {
     private void checkCollision() {
 
         if (player_y >= Ancho) {
-            vida = false;
+            CantVidas--;
+            if (CantVidas == 0) {
+                vida = false;
+            }
         }
 
         if (player_y < 0) {
-            vida = false;
+            CantVidas--;
+            if (CantVidas == 0) {
+                vida = false;
+            }
         }
 
         if (player_x >= Largo) {
-            vida = false;
+            CantVidas--;
+            if (CantVidas == 0) {
+                vida = false;
+            }
         }
 
         if (player_x < 0) {
-            vida = false;
+            CantVidas--;
+            if (CantVidas == 0) {
+                vida = false;
+            }
         }
 
         if (!vida) {
