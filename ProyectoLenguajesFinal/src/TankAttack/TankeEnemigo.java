@@ -13,7 +13,7 @@ import javax.swing.*;
     protected int CordenadaY;
     private final int Largo = 900;
     private final int Ancho = 700;
-    private final int Talla = 30;
+    private final int Talla = 20;
 
     private boolean arriba = false;
     private boolean abajo = false;

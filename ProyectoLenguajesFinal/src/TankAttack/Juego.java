@@ -1,13 +1,13 @@
 package TankAttack;
 
+import org.jpl7.Query;
+import org.jpl7.*;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.*;
@@ -69,6 +69,9 @@ public class Juego extends JPanel implements ActionListener {
 
     List<Muro> metalWall = new ArrayList<Muro>();
     public int[][] mapTileNum;
+    private String xyPlayer;
+    private String xyEnemigo;
+
     public Rectangle getRect() {
         return new Rectangle(player_x, player_y, Ancho, Largo);
     }
@@ -545,8 +548,86 @@ public class Juego extends JPanel implements ActionListener {
 
     public void movientoEnemigo(){
 
+        int xPlayer = player_x/Talla;
+        int yPlayer = player_y/Talla;
+
+        int xEnemigo = TankeEnemigo[0].CordenadaX/Talla;
+        int yEnemigo = TankeEnemigo[0].CordenadaY/Talla;
+        System.out.println("TankeEnemigo[0].CordenadaX = " + TankeEnemigo[0].CordenadaX);
+        System.out.println("TankeEnemigo[0].CordenadaY = " + TankeEnemigo[0].CordenadaY);
+        System.out.println("xPlayer: "+xPlayer+" yPlayer: "+yPlayer);
+        System.out.println("xEnemigo: "+xEnemigo+" yEnemigo: "+yEnemigo);
+
+        int xEnemigo2 = TankeEnemigo2[0].CordenadaX/Talla;
+        int yEnemigo2 = TankeEnemigo2[0].CordenadaY/Talla;
+
+        //tranformar xPlayer y yPlayer en un string
+        //Ejemplo: xPlayer = 2 yPlayer = 3
+        //String = x02y03
+
+
+
+        if (xPlayer < 10 && yPlayer < 10){
+            String x = "0"+xPlayer;
+            String y = "0"+yPlayer;
+            this.xyPlayer = "x"+x+"y"+y;
+            System.out.println("xy = " + this.xyPlayer);
+
+        }else if (xPlayer < 10 ){
+            String x = "0"+xPlayer;
+            this.xyPlayer = "x"+x+"y"+yPlayer;
+            System.out.println("xy = " + this.xyPlayer);
+        }else if (yPlayer < 10){
+            String y = "0"+yPlayer;
+            this.xyPlayer = "x"+xPlayer+"y"+y;
+            System.out.println("xy = " + this.xyPlayer);
+        }else{
+            this.xyPlayer = "x"+xPlayer+"y"+yPlayer;
+            System.out.println("xy = " + this.xyPlayer);
+        }
+
+        if (xEnemigo < 10 && yEnemigo < 10) {
+            String x = "0" + xEnemigo;
+            String y = "0" + yEnemigo;
+            this.xyEnemigo = "x" + x + "y" + y;
+            System.out.println("xy = " + this.xyEnemigo);
+        } else if (xEnemigo < 10) {
+            String x = "0" + xEnemigo;
+            this.xyEnemigo = "x" + x + "y" + yEnemigo;
+            System.out.println("xy = " + this.xyEnemigo);
+        } else if (yEnemigo < 10) {
+            String y = "0" + yEnemigo;
+            this.xyEnemigo = "x" + xEnemigo + "y" + y;
+            System.out.println("xy = " + this.xyEnemigo);
+        } else {
+            this.xyEnemigo = "x" + xEnemigo + "y" + yEnemigo;
+            System.out.println("xy = " + this.xyEnemigo);
+        }
+
+        System.out.println("xyEnemigo = " + this.xyEnemigo);
+        System.out.println("xyPlayer = " + this.xyPlayer);
+
+
+
+        /*
+        Variable X = new Variable("X");
+        Variable Y = new Variable("Y");
+        Query q1 =
+                new Query(
+                        "path",
+                        new Term[] {new Atom(this.xyEnemigo),new Atom(this.xyPlayer),X,Y}
+                );
+
+        java.util.Map<String,Term> solution;
+
+        solution = q1.oneSolution();
+
+        System.out.println( "X = " + solution.get("X"));
+        System.out.println( "Y = " + solution.get("Y"));
+        */  
         int distanciaX = player_x - TankeEnemigo[0].CordenadaX ;
         int distanciaY = player_y - TankeEnemigo[0].CordenadaY ;
+
 
 
         distanciaX = distanciaX >= 0? distanciaX : -distanciaX;
@@ -652,11 +733,11 @@ public class Juego extends JPanel implements ActionListener {
      //realizar un cliclo por cada nivel
         for (int i = 0; i < CantObjetivo; i++) {
             if (r<25){
-                TankeEnemigo[0].CordenadaX = -1 * Talla;
-                TankeEnemigo[0].CordenadaY = -1 * Talla;
+                TankeEnemigo[0].CordenadaX = 1 * Talla;
+                TankeEnemigo[0].CordenadaY = 1 * Talla;
 
             }else if (r >= 25 && r < 50){
-                TankeEnemigo[0].CordenadaX = -1 * Talla;
+                TankeEnemigo[0].CordenadaX = 1 * Talla;
                 TankeEnemigo[0].CordenadaY = 21 * Talla;
 
 
@@ -667,7 +748,7 @@ public class Juego extends JPanel implements ActionListener {
 
             }else if (r >= 75){
                 TankeEnemigo[0].CordenadaX = 21 * Talla;
-                TankeEnemigo[0].CordenadaY = -1 * Talla;
+                TankeEnemigo[0].CordenadaY = 1 * Talla;
 
 
             }
